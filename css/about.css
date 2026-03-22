@@ -1,0 +1,213 @@
+.page-about .hero::before {
+  display: none;
+}
+
+.page-about .section {
+  padding: 120px 0;
+}
+
+.page-about .section-title {
+  margin: 0 0 72px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* HARD SKILLS */
+
+.skills-list {
+  display: grid;
+  gap: 32px;
+}
+
+.skills-list__item {
+  display: grid;
+  grid-template-columns: 446px 1fr;
+  align-items: center;
+  gap: 32px;
+}
+
+.skills-list__label {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.skills-list__bar {
+  position: relative;
+  height: 24px;
+  background: #d9d9d9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skills-list__fill {
+  --target-width: 0%;
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: inherit;
+  background: #f57c2c;
+}
+
+.skills-list__fill.is-animated {
+  animation: skillFill 1.4s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+
+@keyframes skillFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
+}
+
+/* SOFT SKILLS */
+
+.soft-skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.soft-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 256px;
+  padding: 24px 24px;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.soft-card:hover {
+  transform: translateY(-4px);
+  background: #f57c2c; /* оранжевый */
+  border: none; /* убираем обводку */
+}
+
+/* текст внутри карточки */
+.soft-card:hover .soft-card__title,
+.soft-card:hover .soft-card__text {
+  color: #ffffff;
+}
+
+.soft-card__title {
+  margin: 0 0 18px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+
+}
+
+.soft-card__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+/* CONTACTS */
+.page-about .contacts {
+  padding-top: 120px;
+}
+
+/* FOOTER */
+.page-about .footer {
+  margin-top: 0;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1200px) {
+  .page-about .section-title {
+    font-size: 52px;
+  }
+
+  .skills-list__item {
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
+  }
+
+  .skills-list__label {
+    font-size: 32px;
+  }
+
+  .soft-skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-about .section {
+    padding: 80px 0;
+  }
+
+  .page-about .section-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  .skills-list {
+    gap: 22px;
+  }
+
+  .skills-list__item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .skills-list__label {
+    font-size: 28px;
+  }
+
+  .skills-list__bar {
+    height: 10px;
+  }
+
+  .soft-skills__grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .soft-card {
+    min-height: auto;
+    padding: 18px 16px;
+  }
+
+  .soft-card__title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .soft-card__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .page-about .section {
+    padding: 64px 0;
+  }
+
+  .page-about .section-title {
+    font-size: 32px;
+  }
+
+  .skills-list__label {
+    font-size: 24px;
+  }
+
+  .soft-card__title {
+    font-size: 20px;
+  }
+
+  .soft-card__text {
+    font-size: 14px;
+  }
+}

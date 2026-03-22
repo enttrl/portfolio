@@ -1,0 +1,15 @@
+.page-project .section {
+  padding: 72px 0;
+}
+
+.page-project .psection {
+  padding: 0 0 72px;
+}
+
+.projects-section-title,
+.page-project .section-title {
+  margin: 0 0 32px;
+  font-size: clamp(36px, 4vw, 64px);
+  font-weight: 700;
+  line-height: 1;
+}

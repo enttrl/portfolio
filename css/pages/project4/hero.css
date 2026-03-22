@@ -1,0 +1,107 @@
+.project-hero {
+  padding-top: calc(var(--header-height) + 36px);
+}
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.project-nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: #111;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.project-nav__link:hover {
+  color: #f57c2c;
+}
+
+.project-nav__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #000;
+  flex-shrink: 0;
+}
+
+.project-nav__icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.project-nav__link:hover .project-nav__icon {
+  background: #f57c2c;
+  border-color: #f57c2c;
+  color: #fff;
+}
+
+.project-hero__title {
+  max-width: 1600px;
+  margin: 0 0 64px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.project-hero__info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.project-hero__block {
+  display: grid;
+  gap: 18px;
+}
+
+.project-hero__label,
+.project-hero__meta-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.project-hero__text,
+.project-hero__meta-text {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #222;
+}
+
+.project-hero__meta {
+  margin-top: 32px;
+}
+
+.project-team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 88px;
+}
+
+.project-team__link {
+  font-size: 24px;
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.25s ease;
+}
+
+.project-team__link:hover {
+  color: #f57c2c;
+}

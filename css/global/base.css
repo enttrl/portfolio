@@ -1,0 +1,38 @@
+body {
+  min-width: 0;
+  font-family: 'Raleway';
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.page {
+  overflow-x: hidden;
+}
+
+.page__main {
+  padding-bottom: 0px;
+}
+
+/* вся полоса */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* фон полосы */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 999px;
+}
+
+/* бегунок */
+::-webkit-scrollbar-thumb {
+  background: #FF7228;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4C00;
+}
+

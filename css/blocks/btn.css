@@ -1,0 +1,20 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 272px;
+  min-height: 60px;
+  padding: 18px 34px;
+  border-radius: 999px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  background: var(--color-accent);
+  transition: transform var(--transition-default), opacity var(--transition-default),
+    background-color var(--transition-default);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}

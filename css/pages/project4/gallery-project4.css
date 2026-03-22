@@ -1,0 +1,67 @@
+.project-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-gallery--five-cols .project-gallery__grid {
+  width: 100%;
+  max-width: 1600px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.project-gallery--five-cols .project-gallery__item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   margin: 0;
+}
+
+.project-gallery--five-cols .project-gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
+.project-gallery__more-btn {
+  display: none;
+}
+
+.project-team__figma-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* расстояние между текстом и стрелкой */
+
+  margin-top: 48px;
+  width: 100%;
+  max-width: 376px;
+  padding: 14px 24px;
+  border-radius: 99px;
+
+  background-color: #ff7a00;
+  color: #fff;
+
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.figma-btn__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.project-team__figma-btn:hover {
+  background-color: #e66e00;
+  transform: translateY(-2px);
+}

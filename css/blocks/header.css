@@ -1,0 +1,81 @@
+.header {
+  position: sticky; /* чтобы реагировал на скролл */
+  top: 0;
+  z-index: 100;
+
+  height: 85px;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  background: #fff;
+
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* состояние при скролле */
+.header--scrolled {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.header__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__brand {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+.header__burger {
+  display: none;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 112px;
+}
+
+.nav__link {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  
+}
+/* hover */
+.nav__link:hover,
+.nav__link:focus-visible {
+  color: #FF7228;
+}
+
+/* active (когда нажали) */
+.nav__link:active {
+  color: #FF4C00;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--transition-default);
+}
+
+.nav__link:hover::after,
+.nav__link:focus-visible::after {
+  transform: scaleX(1);
+}
