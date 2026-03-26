@@ -1,4 +1,7 @@
 @media (max-width: 1400px) {
+  .more-projects::before {
+  display: none;
+}
   .project-gallery__grid {
     column-gap: 24px;
     row-gap: 24px;
@@ -282,7 +285,10 @@
     min-height: 160px;
     padding: 18px;
   }
-
+  .more-projects__card1 {
+    min-height: 160px;
+    padding: 18px;
+  }
   .more-projects__top {
     align-items: flex-start;
     gap: 12px;

@@ -1,3 +1,18 @@
+.more-projects {
+  position: relative;
+}
+.more-projects::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100vw;
+  height: 500px;
+
+  background: url('../../../assets/img/Vector1788.png') center / cover no-repeat;
+  transform: translateX(-50%);
+  z-index: 0;
+}
 .more-projects__wrap {
   padding-bottom: 184px;
   max-width: 1600px;
@@ -38,7 +53,19 @@
   text-decoration: none;
   transition: transform 0.45s ease, box-shadow 0.45s ease, background-color 0.45s ease;
 }
-
+.more-projects__card1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 256px;
+  padding: 32px;
+  border-radius: var(--radius-md);
+  background: #333333;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.45s ease, box-shadow 0.45s ease, background-color 0.45s ease;
+}
 .more-projects__row--top .more-projects__card:nth-child(1) {
   grid-column: 1;
 }
@@ -55,7 +82,7 @@
   grid-column: 3;
 }
 
-.more-projects__card:hover {
+.more-projects__card:hover, .more-projects__card1:hover {
   transform: translateY(-4px);
   background: #f57c2c;
 }

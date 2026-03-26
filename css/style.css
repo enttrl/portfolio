@@ -20,6 +20,9 @@
 }
 
 @media (max-width: 480px) {
+  .projects__card-image {
+    object-position: 30% center;
+  }
   .mobile-menu {
     display: block;
     opacity: 0;
@@ -399,16 +402,7 @@
 }
 
 .projects__card-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  pointer-events: none;
+   object-position: 80% 70%;
 }
 
 .projects__card-content {
