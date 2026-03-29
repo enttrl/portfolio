@@ -16,5 +16,6 @@
 }
 
 .btn:hover {
+  background-color: #FF4C00;
   transform: translateY(-2px);
 }
