@@ -125,6 +125,12 @@
 }
 
 @media (max-width: 480px) {
+     .project-team__figma-btn {
+    font-size: 18px;
+    padding: 12px 16px;
+    gap: 8px;
+  }
+
   .more-projects::before {
   display: none;
 }

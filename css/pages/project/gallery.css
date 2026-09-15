@@ -51,3 +51,29 @@
 .project-gallery__more-btn {
   display: none;
 }
+
+.project-team__figma-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* расстояние между текстом и стрелкой */
+
+  margin-top: 24px;
+  width: 100%;
+
+  padding: 14px 24px;
+  border-radius: 99px;
+
+  background-color: #ff7a00;
+  color: #fff;
+
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.figma-btn__icon {
+  width: 32px;
+  height: 32px;
+}
